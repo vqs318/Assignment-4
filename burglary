@@ -1,0 +1,281 @@
+burglary
+larceny/theft
+stolen property
+robbery
+vehicle theft
+
+
+arson
+assault
+DUI
+drug/narcotic
+sex offenses forcible/non forcible
+
+
+kidnapping
+missing person
+recovered vehicle
+runaway
+
+
+bad checks
+bribery
+embezzlement
+extortion
+forgery/counterfeiting
+fraud
+
+
+disorderly conduct
+drunkeness
+family offenses
+gambling
+liquor laws
+loitering
+prostitution
+suspicios occ
+trespass
+vandalism
+warrants
+weapon laws
+
+
+
+
+
+
+
+
+SELECT *, category as layer FROM sf_crime
+
+#sf_crime [layer='BURGLARY],[layer='LARCENY/THEFT'],[layer='STOLEN PROPERTY'],[layer='ROBBERY'],[layer='VEHICLE THEFT']{
+  marker-fill: black
+}
+
+
+
+
+
+
+#sf_crime [layer='BURGLARY'],[layer='LARCENY/THEFT'],[layer='STOLEN PROPERTY'],[layer='ROBBERY'],[layer='VEHICLE THEFT']{
+  marker-fill: black
+}
+
+
+#sf_crime [layer='BURGLARY'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='LARCENY/THEFT'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='STOLEN PROPERT'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='ROBBERY'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='VEHICLE THEFT'] 
+{
+  marker-fill: black
+}
+
+
+SELECT *, category as layer FROM sf_crime where category != 'NON-CRIMINAL' and category != 'OTHER OFFENSES' and category != 'SECONDARY OFFENSES' and category != 'SUICIDE'
+
+
+
+
+
+
+
+
+/** simple visualization */
+
+#sf_crime{
+  marker-fill-opacity: 0.5;
+  marker-line-color: #FFF;
+  marker-line-width: 0;
+  marker-line-opacity: 1;
+  marker-placement: point;
+  marker-type: ellipse;
+  marker-width: 6.5;
+  marker-fill: #FF6600;
+  marker-allow-overlap: true;
+}
+
+#sf_crime [layer='BURGLARY'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='LARCENY/THEFT'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='STOLEN PROPERTY'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='ROBBERY'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='VEHICLE THEFT'] 
+{
+  marker-fill: black
+}
+#sf_crime [layer='KIDNAPPING'] 
+{
+  marker-fill: #229A00
+}
+#sf_crime [layer='MISSING PERSON'] 
+{
+  marker-fill: #229A00
+}
+#sf_crime [layer='RECOVERED VEHICLE'] 
+{
+  marker-fill: #229A00
+}
+#sf_crime [layer='RUNAWAY'] 
+{
+  marker-fill: #229A00
+}
+ #sf_crime [layer='BAD CHECKS'] 
+{
+  marker-fill: #7B00B4
+}
+ #sf_crime [layer='BRIBERY'] 
+{
+  marker-fill: #7B00B4
+}
+ #sf_crime [layer='EMBEZZELEMENT'] 
+{
+  marker-fill: #7B00B4
+}
+ #sf_crime [layer='EXTORION'] 
+{
+  marker-fill: #7B00B4
+}
+ #sf_crime [layer='FORGERY/COUNTERFEITING'] 
+{
+  marker-fill: #7B00B4
+}
+ #sf_crime [layer='FRAUD'] 
+{
+  marker-fill: #7B00B4
+}
+ #sf_crime [layer='ARSON'] 
+{
+  marker-fill: #F11810
+}
+ #sf_crime [layer='ASSAULT'] 
+{
+  marker-fill: #F11810
+}
+ #sf_crime [layer='DRIVING UNDER THE INFLUENCE'] 
+{
+  marker-fill: #F11810
+}
+ #sf_crime [layer='DRUG/NARCOTIC'] 
+{
+  marker-fill: #F11810
+}
+#sf_crime [layer='SEX OFFENSES NON FORCIBLE']
+{
+  marker-fill: #F11810
+}
+#sf_crime [layer='SEX OFFENSES FORCIBLE']
+{
+  marker-fill: #F11810
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+PROSTITUTION
+	
+VANDALISM
+	
+SUSPICIOUS OCC
+	
+BURGLARY
+	
+LARCENY/THEFT
+	
+OTHER OFFENSES
+	
+STOLEN PROPERTY
+	
+TRESPASS
+	
+WARRANTS
+	
+FORGERY/COUNTERFEITING
+	
+KIDNAPPING
+	
+SEX OFFENSES FORCIBLE
+	
+DISORDERLY CONDUCT
+	
+WEAPON LAWS
+	
+BRIBERY
+	
+MISSING PERSON
+	
+DRUNKENNESS
+	
+SECONDARY CODES
+	
+EXTORTION
+	
+NON-CRIMINAL
+	
+EMBEZZLEMENT
+	
+RECOVERED VEHICLE
+	
+ARSON
+	
+GAMBLING
+	
+VEHICLE THEFT
+	
+LOITERING
+	
+ASSAULT
+	
+BAD CHECKS
+	
+FRAUD
+	
+ROBBERY
+	
+DRUG/NARCOTIC
+	
+RUNAWAY
+	
+SEX OFFENSES NON FORCIBLE
+	
+DRIVING UNDER THE INFLUENCE
+	
+FAMILY OFFENSES
+	
+LIQUOR LAWS
